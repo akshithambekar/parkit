@@ -1,0 +1,10 @@
+<script>
+    const response = await fetch('https://user.tjhsst.edu/2024pelavart/processwordle?first='+first+'&second='+second+'&third='+third+'&fourth='+fourth+'&fifth='+fifth+'&other='+other)
+	const data = await response.json()
+	let words = data.words
+	let out = ""
+    for (let i =0; i < words.length; i++) {
+        out = out + words[i] + "\n\n"
+    }
+    
+</script>
